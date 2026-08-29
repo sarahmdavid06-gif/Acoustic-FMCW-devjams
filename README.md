@@ -1,8 +1,8 @@
 # Acoustic FMCW Radar — Blind-Spot Detection for Micro-Mobility
 
-**A sub-$15 acoustic radar that gives e-bikes and scooters the same blind-spot awareness that $8,000 LiDAR systems provide on cars.**
+**A radar costing roughly ₹1,000–5,000 that gives e-bikes and scooters the same blind-spot awareness that expensive radar/LiDAR systems provide on cars.**
 
-Built for Smart India Hackathon (SIH) 2026, Smart Vehicles domain, by a team from Vellore Institute of Technology (VIT).
+Built for DevJams 2026, Vellore Institute of Technology (VIT).
 
 ---
 
@@ -10,7 +10,7 @@ Built for Smart India Hackathon (SIH) 2026, Smart Vehicles domain, by a team fro
 
 Two-wheeler riders account for 44.8% of India's road fatalities — over 172,000 deaths in 2023 alone. Riders currently rely on small vibrating mirrors to judge blind-spot traffic, which makes it nearly impossible to gauge how fast a vehicle in the rear-left or rear-right blind spot is actually closing in on them.
 
-Cars solve this with Advanced Driver Assistance Systems (ADAS) — usually 77 GHz millimeter-wave (mmWave) radar or LiDAR. Those systems cost anywhere from $60 to over $8,000 per unit, which completely breaks the economics of a $1,000 e-scooter. Cheaper alternatives, like the common HC-SR04 ultrasonic sensor, only measure raw distance (no direct velocity) and have a 20–30 cm "ring-down" dead zone right next to the vehicle, since the same transducer has to stop vibrating before it can listen again.
+Cars solve this with Advanced Driver Assistance Systems (ADAS) — usually 77 GHz millimeter-wave (mmWave) radar or LiDAR. Those systems cost anywhere from around ₹5,000 to well over ₹6.5 lakh per unit (approximate, based on current exchange rates), which completely breaks the economics of a two-wheeler or e-scooter typically worth ₹80,000–90,000. Cheaper alternatives, like the common HC-SR04 ultrasonic sensor, only measure raw distance (no direct velocity) and have a 20–30 cm "ring-down" dead zone right next to the vehicle, since the same transducer has to stop vibrating before it can listen again.
 
 ## Our Solution
 
@@ -19,7 +19,7 @@ This project takes the mathematical principles behind expensive automotive radio
 - **Frequency-Modulated Continuous Wave (FMCW):** Rather than a single "beep," the sensor transmits a continuous, sweeping tone — a linear chirp — from 35 kHz to 45 kHz, inaudible to humans.
 - **Full duplex transmit/receive:** A dedicated transmitter and a separate dedicated receiver run at the same time, which removes the ring-down dead zone entirely. The blind zone shrinks from 20–30 cm down to 1–5 cm.
 - **Coherent processing:** Because the system knows exactly what frequency it's transmitting at any given microsecond, it can extract both the target's distance (Time of Flight) and its velocity (Doppler phase shift) from the same signal, at the same time.
-- **Cost:** All of this comes in at under $15 in parts.
+- **Cost:** All of this comes in at roughly ₹1,000–5,000 in parts.
 
 ## How It Works
 
@@ -70,8 +70,7 @@ This project takes the mathematical principles behind expensive automotive radio
 - NE5532 (or TL072) preamp module
 - Passives (resistors, capacitors) and a breadboard for the preamp bias network
 
-Full prototype cost: roughly ₹1,000–1,150 (about $15).
-
+Full prototype cost: roughly ₹1,000–5,000.
 
 ## Team
 
